@@ -2,9 +2,8 @@
   "name": "bigpanda",
   "module": "index.ts",
   "type": "module",
-  "private": true,
-  "homepage": "https://<ТВОЙ-НИК-НА-GITHUB>.github.io/<НАЗВАНИЕ-ТВОЕГО-РЕПОЗИТОРИЯ>",
-
+  "private": false,
+  "homepage": "https://rexDeus92.github.io/BigPanda",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
