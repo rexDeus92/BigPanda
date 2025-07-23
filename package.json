@@ -3,6 +3,13 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "homepage": "https://<ТВОЙ-НИК-НА-GITHUB>.github.io/<НАЗВАНИЕ-ТВОЕГО-РЕПОЗИТОРИЯ>",
+
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "@types/bun": "latest",
@@ -10,5 +17,8 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
